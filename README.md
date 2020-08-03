@@ -1,1 +1,4 @@
-# what-i-learn-week-12
+# Monday
+## CSS Selector 
+
+document.querySelector('#item-1')
