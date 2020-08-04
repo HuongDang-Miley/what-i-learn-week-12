@@ -30,13 +30,12 @@ Node list of has property like: length; forEach, Key, etch
 <li>Banana</li>
 <li>Mango</li>
 </ul>
-const list = document.querySelectAll('li')
-// -> list is node list of li
+const list = document.querySelectAll('li') // -> list is node list of <li>
 ~~~
 To use .map() and .filter(), must convert the note list to an actual array
 
 ~~~
-const listArray = Array.from(list)
+const listArray = Array.from(list) //-> listArray is an array of <li>
 ~~~~
 
 ## event property
