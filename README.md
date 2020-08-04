@@ -1,6 +1,43 @@
 # Monday
-## CSS Selector 
+## document.querySelector(str) 
+A JS method to target HTML element and over write its CSS style </br>
+Return an object which is the element being selected</br>
+If there are many similar element (eg: li) only the first one will be return</br>
+~~~
+<h1>Hello World</h1>
+document.querySelector('h1')
+~~~
+hold cmd + L / cmd + O : live server: to view on browser </br>
+Opt + cmd + J: inspect on broswer </br>
 
-document.querySelector('#item-1')</br>
-Target an element with id item-1. return an object</br>
-cmd + shif + P : live server: to view on browser </br>
+# Tuesday
+
+
+## document.querySelectAll(str)
+Select all similar element</br>
+Return a NodeListOf element </br>.
+Node list of has property like: length; forEach, Key, etch
+~~~
+<ul>
+<li>Apple</li>
+<li>Banana</li>
+<li>Mango</li>
+</ul>
+const list = document.querySelectAll('li')
+// -> list is node list of li
+~~~
+To use .map() and .filter(), must convert the note list to an actual array
+
+~~~
+const listArray = Array.from(list)
+~~~~
+
+## event parameter
+Browser has its own property when mouse do something to an element, we can see it by running below function and check inspect page
+~~~
+const isClicked = function(event) {
+console.log(event)
+}
+list.addEventListner('click',isClicked)
+~~~
+
